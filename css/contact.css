@@ -37,6 +37,10 @@
     margin-top: 15%;
     max-width: 37.5em;
   }
+  #form .left-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.75em;
+  }
   #form #contact {
     margin: auto;
     margin-bottom: 6.25em;
