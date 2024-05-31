@@ -13,12 +13,12 @@
 
 
     <!--Social Media Display-->
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content="/images/social.jpg"/>
-    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/images/social.jpg">
+    <meta property="og:image:secure_url" content="/images/social.jpg">
 
     <!--Favicons-->
     <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
@@ -199,7 +199,7 @@
                     <button class="option-button" data-target="maintenance-content">Maintenance</button>
                 </div>
                 <div id="hosting-content" class="option-content">
-                    <section id="option-sidebyside" class="option-sidebyside">
+                    <section class="option-sidebyside">
                         <div class="option-container">
                             <div class="content">
                                 <h2 class="title">Hosting</h2>
@@ -222,7 +222,8 @@
                         </div>
                    </section>
                 </div>
-                <div id="seo-content" class="option-content"><section id="option-sidebyside" class="option-sidebyside">
+                <div id="seo-content" class="option-content">
+                    <section class="option-sidebyside">
                     <div class="option-container">
                         <div class="content">
                             <h2 class="title">Search Engine Optimization</h2>
@@ -244,7 +245,7 @@
                          </picture>
                     </div>
                </section></div>
-                <div id="webdev-content" class="option-content"><section id="option-sidebyside" class="option-sidebyside">
+                <div id="webdev-content" class="option-content"><section class="option-sidebyside">
                     <div class="option-container">
                         <div class="content">
                             <h2 class="title">Web Design & Development</h2>
@@ -361,7 +362,7 @@
         and we used these body.scroll styles to create some on scroll 
         animations with the navbar
     -->
-    <script defer>
+    <script>
         document.addEventListener('scroll', (e) => { 
             const scroll = document.documentElement.scrollTop;
             if(scroll >= 100){
