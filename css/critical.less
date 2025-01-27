@@ -379,11 +379,14 @@
         }
 
         .options-row {
-            display: block;
+            display: flex;
+            flex-direction: column;
             width: 100%;
             max-width: 100%;
             margin: auto;
             margin-bottom: 50/16em;
+            align-items: center;
+            justify-content: center;
             &:last-of-type {
                 margin-bottom: 0;
             }
@@ -392,7 +395,6 @@
             width: 267/16em;
             height: 67/16em;
             padding: 20/16em;
-            margin-left: 32/16em;
             margin-top: 32/16em;
             background-color: var(--primary);
             color: white;

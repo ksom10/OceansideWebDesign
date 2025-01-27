@@ -318,11 +318,14 @@
     object-fit: contain;
   }
   #options .options-row {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     margin: auto;
     margin-bottom: 3.125em;
+    align-items: center;
+    justify-content: center;
   }
   #options .options-row:last-of-type {
     margin-bottom: 0;
@@ -331,7 +334,6 @@
     width: 16.6875em;
     height: 4.1875em;
     padding: 1.25em;
-    margin-left: 2em;
     margin-top: 2em;
     background-color: var(--primary);
     color: white;
