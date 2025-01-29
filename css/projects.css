@@ -1,86 +1,92 @@
 /*-- -------------------------- -->
-<---         Portfolio          -->
+<---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #portfolio {
-    padding-top: 3.125em;
-    padding-bottom: 35%;
-    position: relative;
-    z-index: 5;
+  #sidebyside {
+    padding: 50px 0;
   }
-  #portfolio .container {
-    width: 96%;
-    max-width: 82.625em;
-    padding: 0;
-    margin: auto;
+  #sidebyside .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1.875em;
-    font-size: min(1.3vw, 1em);
-  }
-  #portfolio .container .row {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  #sidebyside .content {
+    order: 2;
+    margin: auto;
+    margin-top: 2.8125em;
+    max-width: 38.1875em;
+  }
+  #sidebyside .content h2 {
+    font-size: 2em;
+    margin-bottom: 0.875em;
+  }
+  #sidebyside .content p {
+    margin-bottom: 1.11111111em;
+  }
+  #sidebyside .content ul {
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  #sidebyside .content ul li {
+    list-style: none;
+    display: flex;
     justify-content: flex-start;
-    gap: 1.875em;
+    align-items: flex-start;
   }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(1) {
-    width: 26.25em;
-    height: 35.4375em;
+  #sidebyside .content ul li img {
+    margin-right: 0.625em;
+    margin-top: 0.22222222em;
   }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(2) {
-    width: 26.25em;
-    height: 39.3125em;
+  #sidebyside .content .button-solid {
+    margin-top: 1.78571429em;
   }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(3) {
-    width: 26.25em;
-    height: 32em;
-  }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(1) {
-    width: 26.25em;
-    height: 30.75em;
-  }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(2) {
-    width: 26.25em;
-    height: 32.3125em;
-  }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(3) {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(1) {
-    width: 26.25em;
-    height: 39.0625em;
-  }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(2) {
-    width: 26.25em;
-    height: 28.25em;
-  }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(3) {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #portfolio .container .row picture {
-    position: relative;
+  #sidebyside .image-box {
     display: block;
+    position: relative;
+    margin: auto;
+    width: 38.1875em;
+    height: 53.8125em;
+    font-size: min(1.4vw, 1em);
   }
-  #portfolio .container .row picture img {
+  #sidebyside .image-box img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 0.5em;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+  #sidebyside {
+    padding: 6.25em 0;
   }
 }
 /* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #portfolio {
+@media only screen and (min-width: 1300px) {
+  #sidebyside {
     padding: 9.375em 0;
+  }
+  #sidebyside .container {
+    max-width: 80.6875em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #sidebyside .content {
+    margin: 0;
+    width: 60%;
+  }
+  #sidebyside .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.875em;
+  }
+  #sidebyside .image-box {
+    margin: 0;
+    margin-right: 5.625em;
   }
 }
 /*-- -------------------------- -->
@@ -163,10 +169,6 @@
     display: block;
     height: 69.25em;
     width: 125em;
-    background: url("../images/cta-squares.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     opacity: 1;
     bottom: 0;
     left: 50%;
@@ -199,5 +201,279 @@
 @media only screen and (min-width: 0em) {
   body.dark-mode #cta:after {
     display: none;
+  }
+}
+/*Portfolio Section*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  .portfolio {
+    border-radius: 0.3125em;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+    background: white;
+    width: 90%;
+    max-width: 82.5em;
+    padding: 5.625em 1.25em;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3.125em;
+  }
+  .portfolio h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.875em;
+    color: var(--primary);
+  }
+  .portfolio .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Rest of your flex styling */
+  }
+  .portfolio .card {
+    display: block;
+    width: 100%;
+    max-width: 22.3125em;
+    margin: auto;
+    margin-bottom: 3.125em;
+    border: solid 1px #E5E5E5;
+    border-radius: 0.3125em;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    padding: 1.25em;
+  }
+  .portfolio .card:last-of-type {
+    margin-bottom: 0;
+  }
+  .portfolio .card .yed {
+    background: white;
+    max-width: 16.375em;
+    height: 16.5625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.4375em;
+  }
+  .portfolio .card .yed img {
+    width: 100%;
+    height: 70%;
+  }
+  .portfolio .card .mccracken {
+    background: white;
+    max-width: 18.875em;
+    height: 20.3125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.4375em;
+  }
+  .portfolio .card .mccracken img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio .card .lhi {
+    background: white;
+    max-width: 18.875em;
+    height: 7.8125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5em;
+    margin-top: 5.1875em;
+  }
+  .portfolio .card .lhi img {
+    width: 100%;
+    height: 80%;
+  }
+  .portfolio .card h2 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.35em;
+    font-weight: 900;
+    color: var(--primaryShade);
+    margin-bottom: 0.65em;
+  }
+  .portfolio .card .mccracken-heading {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.35em;
+    font-weight: 900;
+    color: var(--primaryShade);
+    margin-bottom: 0.75em;
+    margin-top: -2em;
+  }
+  .portfolio .card p {
+    text-align: left;
+    line-height: 1.33333333em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .portfolio .card a {
+    display: block;
+    margin-top: 3.21428571em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    font-size: min(1.8vw, 1em);
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* Rest of your flex styling */
+  }
+  .portfolio .card {
+    margin: 0;
+    margin-top: 1.5em;
+    max-width: 26.5625em;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  .portfolio {
+    padding: 3.125em 5em;
+    border-radius: 0.3125em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+    background: white;
+    width: 90%;
+    max-width: 82.5em;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3.125em;
+  }
+  .portfolio .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -4.1875em;
+    /* Rest of your flex styling */
+  }
+  .portfolio .card {
+    max-width: 22.3125em;
+  }
+}
+/*-- -------------------------- -->
+<---   Interior Page Header     -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #project-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    min-height: 30vh;
+    padding-top: 6.25em;
+  }
+  #project-hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #project-hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    object-position: 45% 48%;
+    object-fit: cover;
+  }
+  #project-hero h1 {
+    color: #fff;
+    font-size: 1.33333333em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 96%;
+    max-width: 10.9375em;
+    margin-top: 1em;
+    margin-bottom: 0.46875em;
+  }
+  #project-hero h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+    border-radius: 0.25em;
+  }
+  #project-hero p {
+    color: #fff;
+    text-align: center;
+    max-width: 22.22222222em;
+    margin: auto;
+    margin-bottom: 1.66666667em;
+    display: block;
+    width: 96%;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #project-hero {
+    font-size: 16px;
+  }
+  #project-hero h1 {
+    font-size: 4em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #project-hero {
+    min-height: 18.75em;
+    height: auto;
+    padding-top: 11.25em;
+    padding-block-end: 6.25em;
+    background-attachment: fixed;
+    font-size: inherit;
+  }
+  #project-hero h1 {
+    color: #fff;
+    font-size: 3.33333333em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 96%;
+    max-width: 12.5em;
+    margin-top: 0.375em;
+    margin-bottom: 0.625em;
   }
 }
