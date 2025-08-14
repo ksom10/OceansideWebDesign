@@ -75,7 +75,7 @@
   #dev-services .process .process-arrow {
     width: 2em;
     height: auto;
-    transform: rotate(90deg);
+    transform: rotate(90deg) !important;
   }
 }
 /* Tablet */
