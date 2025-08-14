@@ -76,6 +76,7 @@
     width: 2em;
     height: auto;
     transform: rotate(90deg) !important;
+    display: block;
   }
 }
 /* Tablet */
@@ -132,6 +133,12 @@
   }
   #dev-services .process .step h4 {
     font-size: 1.125em;
+  }
+  #dev-services .process .process-arrow {
+    width: 2em;
+    height: auto;
+    transform: rotate(0deg) !important;
+    display: block;
   }
 }
 /*-- -------------------------- -->
