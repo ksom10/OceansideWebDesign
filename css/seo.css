@@ -222,7 +222,8 @@
     height: 2.5em;
     margin: 0.5em auto;
     margin-left: 1.75em;
-    transform: rotate(180deg);
+    transform: rotate(0deg) !important;
+    display: block;
   }
   #seo-services .seo-process .seo-step p,
   #seo-services .seo-final-row .seo-step p,
