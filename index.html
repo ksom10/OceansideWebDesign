@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.oceansideweb.design">
+
+    <meta name="description" content="Explore Oceanside Web Design's comprehensive services in website design, development, SEO optimization, and branding solutions. Serving Broward County, Florida, we are your trusted partner for a professional online presence.">
+    <meta name="keywords" content="Oceanside Web Design, website design, web development, SEO optimization, branding solutions, Broward County, Florida, professional online presence">
+
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/images/social.jpg">
+    <meta property="og:image:secure_url" content="/images/social.jpg">
+
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="./images/landing-m.webp">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="./css/critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/dark.css">
+
+    <!--Defer loading the whole page css-->
+    <link rel="stylesheet" href="./css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+        <link rel="stylesheet" href="./css/local.css">
+    </noscript>
+
+    <title>Oceanside Web Design | Website Development | Broward County, Florida</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a class="logo" aria-label="click to go to home page" href="index.html">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="./images/logo.png" decoding="async" alt="logo" width="221" height="226">
+
+                <!--Dark Colored Logo-->
+                <img class="dark" aria-hidden="true" src="./images/logo.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+            </a>
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="#services">
+                            Services <span class="dropdown-icon">▼</span>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="development.html">Web Development</a></li>
+                            <li><a href="seo.html">SEO</a></li>
+                            <li><a href="maintenance.html">Maintenance</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="analytics.html">Analytics</a></li>
+                            <li><a href="branding.html">Branding</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+           
+
+            <!--Mobile Nav toggle-->
+            <button aria-label="hamburger menu" class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="hero">
+             <video autoplay muted loop playsinline aria-hidden="true" id="hero-video">
+                <source src="./images/landing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <div class="heroText">
+                    <p>Unlock Your Web Potential with a Versatile Development & Design Agency!</p>
+                    <h1 id="home-h">Welcome to Oceanside Web Design: Your Partner in Professional Website Design and Development</h1>
+                    <p>
+                        Explore our comprehensive range of services, including website design, development, SEO optimization, and branding solutions. Proudly serving Broward County, Florida, Oceanside Web Design is your trusted partner for professional online presence.
+                    </p>
+                    <a class="button-solid" href="contact.html" target="_blank" rel="noopener">
+                        Get In Touch!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        <section id="services" class="services">
+            <div class="services-grid">
+                <div class="card">
+                    <picture>
+                        <img src="./images/service1.svg" alt="responsive web development" width="48" height="48">
+                    </picture>
+                    <h2>Responsive Web Development</h2>
+                    <p>Create websites that adapt seamlessly to various devices, ensuring optimal user experience on all screens. Our builds are mobile-first, lightning-fast, and optimized for accessibility and modern design standards.</p>
+                    <a href="development.html" class="card-btn">More About Development</a>
+                </div>
+                <div class="card">
+                    <picture>
+                        <img src="./images/service2.svg" alt="SEO" width="48" height="48">
+                    </picture>
+                    <h2>Search Engine Optimization (SEO)</h2>
+                    <p>Optimize websites to rank higher in search engines using technical SEO, content strategies, and keyword targeting. We help your ideal audience find you organically.</p>
+                    <a href="seo.html" class="card-btn">More About SEO</a>
+                </div>
+                <div class="card">
+                    <picture>
+                        <img src="./images/service3.svg" alt="maintenance" width="48" height="48">
+                    </picture>
+                    <h2>Website Maintenance and Support</h2>
+                    <p>Ensure your website remains secure, up-to-date, and functioning at peak performance. Includes regular backups, updates, and technical troubleshooting.</p>
+                    <a href="maintenance.html" class="card-btn">More About Maintenance</a>
+                </div>
+            </div>
+
+            <div class="services-grid second-row">
+                <div class="card">
+                    <picture>
+                        <img src="./images/service4.svg" alt="UX Design" width="48" height="48">
+                    </picture>
+                    <h2>User Experience Design</h2>
+                    <p>Craft intuitive, goal-driven interfaces that guide users effortlessly through your site. We focus on engagement, clarity, and accessibility.</p>
+                    <a href="design.html" class="card-btn">More About Design</a>
+                </div>
+                <div class="card">
+                    <picture>
+                        <img src="./images/service5.svg" alt="Analytics" width="48" height="48">
+                    </picture>
+                    <h2>Performance Analytics</h2>
+                    <p>Track site metrics, user behaviors, and conversion funnels to guide smart business decisions. Real-time dashboards and monthly reports included.</p>
+                    <a href="analytics.html" class="card-btn">More About Analytics</a>
+                </div>
+                <div class="card">
+                    <picture>
+                        <img src="./images/service6.svg" alt="Branding" width="48" height="48">
+                    </picture>
+                    <h2>Branding & Identity</h2>
+                    <p>Establish a memorable brand through cohesive design, tone, and digital presence. Logos, colors, typography, and messaging that resonate.</p>
+                    <a href="branding.html" class="card-btn">More About Branding</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Unlock the Power of Superior Web Solutions Crafted by Our Skilled Team of Developers, Ensuring an Optimal Online Experience!</h2>
+                     <p>
+                        With a focus on providing optimal user experiences, we utilize the latest technologies and industry best practices to create websites that are not only visually stunning but also highly functional and easy to navigate. Whether you need a brand new website or a revamp of your existing one, our experts are here to guide you through every step of the process.
+                     </p>
+                     <ul>
+                        <li class="list-item">
+                            <span>Empowering Growth and Unifying Digital Presence</span>
+                        </li>
+                        <li class="list-item">
+                            <span>Optimal Web Design & Development Solutions</span>
+                        </li>
+                        <li class="list-item">
+                            <span>Affordable Web Packages & Detailed Results</span>
+                    </ul>
+                     <a class="button-solid" href="about.html" id="service">Learn More!</a>
+                </div>
+                <picture class="image-box" >
+                     <source media="(max-width: 600px)" srcset="./images/banner-m.png">
+                     <source media="(min-width: 601px)" srcset="./images/banner.png">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="./images/banner.webp" alt="computer on beach" width="450" height="662">
+                 </picture>
+            </div>
+       </section>
+
+        <!-- ============================================ -->
+        <!--              Pricing Section                -->
+        <!-- ============================================ -->
+        <section id="pricing">
+            <div class="container">
+                <h2>Affordable Website Packages</h2>
+                <h1>Affordable Plans for Ambitious Ideas</h1>
+                <div class="pricing-row">
+                    <button class="pricing-button" data-target="monthly-content">Monthly Subscription</button>
+                    <button class="pricing-button" data-target="lumpsum-content">Lump Sum</button>
+                    <button class="pricing-button" data-target="custom-content">E-Commerce</button>
+                </div>
+
+                <!-- Monthly Plan -->
+                <div id="monthly-content" class="pricing-content">
+                    <section class="pricing-sidebyside">
+                        <div class="pricing-container">
+                            <div class="content">
+                                <h2 class="title">Monthly Subscription</h2>
+                                <p>
+                                    Perfect for startups and small businesses looking for affordable flexibility.
+                                    <br><br>
+                                    Our monthly subscription includes everything you need to get started online without a large upfront cost. You'll get a professionally built site with unlimited edits, hosting, and support—all at one low monthly price.
+                                    <br><br>
+                                    Features include:
+                                </p>
+                                <ul>
+                                    <li>Web Design & Development</li>
+                                    <li>Unlimited Edits</li>
+                                    <li>Hosting Included</li>
+                                    <li>24/7 Support</li>
+                                    <li>Lifetime Updates</li>
+                                </ul>
+                                <p><strong>Starting at $100/month</strong></p>
+                                <a href="#branding" class="price-btn">Get Started!</a>
+                            </div>
+                            <picture class="image-box">
+                                <source media="(max-width: 600px)" srcset="./images/hosting-m.jpg">
+                                <source media="(min-width: 601px)" srcset="./images/hosting.jpg">
+                                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/hosting.webp" alt="monthly plan image" width="450" height="662">
+                            </picture>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Lump Sum -->
+                <div id="lumpsum-content" class="pricing-content">
+                    <section class="pricing-sidebyside">
+                        <div class="pricing-container">
+                            <div class="content">
+                                <h2 class="title">Lump Sum</h2>
+                                <p>
+                                    Great for businesses that want to pay once and own their site outright.
+                                    <br><br>
+                                    You'll get a beautiful and functional website built to spec, with optional add-ons for long-term edits and support.
+                                    <br><br>
+                                    Features include:
+                                </p>
+                                <ul>
+                                    <li>Web Design & Development</li>
+                                    <li>$50 per edit after delivery</li>
+                                    <li class="no">No Ongoing Support</li>
+                                    <li class="no">No Free Updates</li>
+                                </ul>
+                                <a href="#branding" class="price-btn">Request a Quote!</a>
+                            </div>
+                            <picture class="image-box">
+                                <source media="(max-width: 600px)" srcset="./images/design-m.jpg">
+                                <source media="(min-width: 601px)" srcset="./images/design.jpg">
+                                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/design.webp" alt="lump sum plan" width="450" height="662">
+                            </picture>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Custom -->
+                <div id="custom-content" class="pricing-content">
+                    <section class="pricing-sidebyside">
+                        <div class="pricing-container">
+                            <div class="content">
+                                <h2 class="title">E-Commerce</h2>
+                                <p>
+                                    Ideal for businesses with specific needs or advanced functionality.
+                                    <br><br>
+                                    Whether you're integrating a booking system, client dashboard, or e-commerce, we'll build your site from the ground up to meet your vision.
+                                    <br><br>
+                                    Features include:
+                                </p>
+                                <ul>
+                                    <li>Custom Web Design & Features</li>
+                                    <li>Full Admin Access</li>
+                                    <li>Fully Editable CMS</li>
+                                    <li>Dedicated Developer Contact</li>
+                                    <li>Training & Documentation</li>
+                                </ul>
+                                <a href="#branding" class="price-btn">Request a Quote!</a>
+                            </div>
+                            <picture class="image-box">
+                                <source media="(max-width: 600px)" srcset="./images/seo-m.jpg">
+                                <source media="(min-width: 601px)" srcset="./images/seo.jpg">
+                                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/seo.webp" alt="custom plan" width="450" height="662">
+                            </picture>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+            <!-- ============================================ -->
+            <!--                  Reviews                     -->
+            <!-- ============================================ -->
+
+            <section id="reviews">
+            <div class="container">
+                <h2 class="section-heading">What Our Clients Are Saying</h2>
+
+                <div class="reviews-grid">
+
+                <!-- Review 1 -->
+                <div class="review">
+                    <p>“Working with Kam completely transformed my business. He took the time to understand my brand and delivered a stunning website that’s fast, clean, and modern.”</p>
+                    <div class="star-group">
+                    <span class="name">Jared T.</span>
+                    <img src="./images/stars.svg" alt="stars" width="91" height="15">
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review">
+                    <p>“Kam made the whole process easy and stress-free. From our first call to final launch, he was responsive, professional, and incredibly talented.”</p>
+                    <div class="star-group">
+                    <span class="name">Emily B.</span>
+                    <img src="./images/stars.svg" alt="stars" width="91" height="15">
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review">
+                    <p>“We’ve worked with other developers before, but Kameron’s work ethic and creative eye blew us away. Our site looks incredible and performs even better.”</p>
+                    <div class="star-group">
+                    <span class="name">Michael R.</span>
+                    <img src="./images/stars.svg" alt="stars" width="91" height="15">
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review">
+                    <p>“Kameron delivered exactly what I needed and more. The site is not only beautiful but optimized for SEO and mobile users. Couldn’t be happier!”</p>
+                    <div class="star-group">
+                    <span class="name">Lauren H.</span>
+                    <img src="./images/stars.svg" alt="stars" width="91" height="15">
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review">
+                    <p>“Kam brought our vision to life. The final site is sleek, user-friendly, and exactly what we needed to level up our online presence.”</p>
+                    <div class="star-group">
+                    <span class="name">Brandon M.</span>
+                    <img src="./images/stars.svg" alt="stars" width="91" height="15">
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review">
+                    <p>“Kameron has an amazing sense of design and a deep understanding of functionality. Our website has never looked or worked better.”</p>
+                    <div class="star-group">
+                    <span class="name">Rachel S.</span>
+                    <img src="./images/stars.svg" alt="stars" width="91" height="15">
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </section>
+
+
+       
+
+        <!-- ============================================ -->
+        <!--             Final Call to Action             -->
+        <!-- ============================================ -->
+
+        <section id="cta">
+            <div class="container">
+                <h2 class="title">
+                    Ready to shine online? <br> Let's make it happen together!
+                </h2>
+                <p>
+                    Get in touch with us today and kickstart your journey towards a stunning website that drives results.
+                </p>
+                <a href="contact.html" class="button-solid">Get an Estimate Now</a>
+            </div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/cta-m.png">
+                <source media="(min-width: 601px)" srcset="./images/cta.png">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/cta.webp" alt="call to action" width="1920" height="1280">
+             </picture>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="./images/logo-white.png" alt="logo" width="264" height="78"></a>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Information</h2></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#portfolio">Projects</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Services</h2></li>
+                        <li>Website Design</li>
+                        <li>Website Maintenance</li>
+                        <li>Hosting</li>
+                        <li>SEO Services</li>
+                    </ul>
+                    <ul>
+                        <li><h2>Contact</h2></li>
+                        <li><a href="tel:555-779-4407">T: (219) 921-3423</a></li>
+                        <li><a href="mailto:someson1569@gmail.com">someson1569@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>Designed and Hand Coded by</span>
+            <a href="" target="_blank" rel="noopener">Oceanside Web Design</a>
+            <span class="copyright"> Copyright 2024 - Present</span></div>
+    </footer>
+
+    <script defer src="./app.js"></script>
+    <script defer src="./nav.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
+    <script>
+       document.querySelectorAll('#navbar-menu .has-dropdown > a').forEach(el => {
+        el.addEventListener('click', function (e) {
+            e.preventDefault();
+            const parent = this.parentElement;
+            parent.classList.toggle('open');
+        });
+        });
+
+    </script>
+
+
+</body>
+</html>
