@@ -89,8 +89,9 @@
       .process-arrow {
         width: 32/16em;
         height: auto;
-        transform: rotate(90deg) !important;
         display: block;
+        margin: 0 auto;
+        transform: rotate(90deg) !important;
       }
     }
   }
@@ -182,6 +183,12 @@
   }
 }
 
+/* Mobile-specific fix to ensure arrow rotates down */
+@media only screen and (max-width: 47.99em) {
+  #dev-services .process .process-arrow {
+    transform: rotate(90deg) !important;
+  }
+}
 
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
