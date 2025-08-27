@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Canonical URL -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://www.oceansideweb.design">
 
-    <!-- Meta Description & Keywords -->
+    <!-- SEO Meta -->
     <meta name="description" content="Explore Oceanside Web Design's comprehensive services in website design, development, SEO optimization, and branding solutions. Serving Broward County, Florida, we are your trusted partner for a professional online presence.">
     <meta name="keywords" content="Oceanside Web Design, website design, web development, SEO optimization, branding solutions, Broward County, Florida, professional online presence">
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Oceanside Web Design">
-    <meta property="og:description" content="Professional web design and development agency serving Broward County, Florida.">
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.oceansideweb.design">
+    <meta property="og:url" content="">
     <meta property="og:image" content="/images/social.jpg">
     <meta property="og:image:secure_url" content="/images/social.jpg">
 
@@ -28,27 +28,56 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Preload Fonts & Images -->
-    <link rel="preload" as="image" href="./images/landing-m.webp">
+    <!-- Preload Fonts -->
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-900.woff2" crossorigin>
 
-    <!-- Preload & Async Load for Above-the-Fold CSS -->
-    <link rel="preload" href="./css/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/critical.css"></noscript>
+    <!-- Preload Above-the-Fold Styles -->
+    <link rel="preload" href="./css/critical.css" as="style">
+    <link rel="preload" href="./css/root.css" as="style">
+    <link rel="preload" href="./css/dark.css" as="style">
 
-    <link rel="preload" href="./css/root.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/root.css"></noscript>
+    <!-- Critical CSS (Loaded Immediately) -->
+    <link rel="stylesheet" href="./css/critical.css"> <!-- Above the fold -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/dark.css">
 
-    <link rel="preload" href="./css/dark.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/dark.css"></noscript>
+    <!-- Defer Below-the-Fold CSS -->
+    <link rel="stylesheet" href="./css/local.css" media="print" onload="this.media='all'; this.onload=null;">
 
-    <!-- Defer Non-Critical Styles -->
-    <link rel="stylesheet" href="./css/local.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="./css/local.css"></noscript>
+    <!-- Fallback if JS disabled -->
+    <noscript>
+        <link rel="stylesheet" href="./css/local.css">
+        <link rel="stylesheet" href="./css/root.css">
+        <link rel="stylesheet" href="./css/dark.css">
+    </noscript>
+
+    <style>
+        /* Fix for Google Lighthouse font-display warning */
+        @font-face {
+            font-family: 'Roboto';
+            src: url('fonts/roboto-v29-latin-regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Roboto';
+            src: url('fonts/roboto-v29-latin-700.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Roboto';
+            src: url('fonts/roboto-v29-latin-900.woff2') format('woff2');
+            font-weight: 900;
+            font-display: swap;
+        }
+    </style>
 
     <title>Oceanside Web Design | Website Development | Broward County, Florida</title>
 </head>
+
 
 <body>
     <!--Screen reader skip main nav-->
