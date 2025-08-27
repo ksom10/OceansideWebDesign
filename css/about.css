@@ -5,10 +5,6 @@
 @media only screen and (min-width: 0em) {
   #about {
     padding: 3.75em 1em;
-    background-image: url('../images/about-wave-right.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
     margin-top: 2.5em;
   }
   #about .container {
