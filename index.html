@@ -34,6 +34,12 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
+
+    <!-- Preload styles for faster fetching -->
+    <link rel="preload" href="./css/critical.css" as="style">
+    <link rel="preload" href="./css/root.css" as="style">
+    <link rel="preload" href="./css/dark.css" as="style">
+
     <link rel="stylesheet" href="./css/critical.css"> <!-- Only above the fold css-->
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/dark.css">
@@ -44,6 +50,8 @@
     <!--If the user has javascript disbaled, load this stylesheet-->
     <noscript>
         <link rel="stylesheet" href="./css/local.css">
+        <link rel="stylesheet" href="./css/root.css">
+        <link rel="stylesheet" href="./css/dark.css">
     </noscript>
 
     <title>Oceanside Web Design | Website Development | Broward County, Florida</title>
