@@ -6,7 +6,6 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-
     #hero {
         font-size: inherit;
         padding-bottom: 100/16em;
@@ -35,6 +34,11 @@
             width: 100%;
             object-fit: cover;
             z-index: -11;
+            pointer-events: none; // Prevent ghost play button
+        }
+
+        #hero-video::-webkit-media-controls {
+            display: none !important; // Hide iOS media controls
         }
 
         picture {
@@ -59,7 +63,7 @@
 
         h1 {
             font-weight: bold;
-            font-size: 28/16em; // smaller for mobile
+            font-size: 28/16em;
             color: #fff;
             text-align: left;
             line-height: 1.2;
@@ -84,7 +88,7 @@
         }
 
         p {
-            font-size: 16/16em; // smaller for mobile
+            font-size: 16/16em;
             line-height: 1.55em;
             margin: auto;
             margin-bottom: 31/18em;
@@ -125,7 +129,7 @@
         padding-bottom: 307/16em;
 
         h1 {
-            font-size: ~"min(9vw, 3em)"; // larger font restored on desktop
+            font-size: ~"min(9vw, 3em)";
             line-height: 77/64;
         }
 
@@ -138,6 +142,7 @@
         }
     }
 }
+
 
 
 /*-- -------------------------- */

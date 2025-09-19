@@ -30,6 +30,10 @@
     width: 100%;
     object-fit: cover;
     z-index: -11;
+    pointer-events: none;
+  }
+  #hero #hero-video::-webkit-media-controls {
+    display: none !important;
   }
   #hero picture {
     display: none;
