@@ -35,10 +35,12 @@
             object-fit: cover;
             z-index: -11;
             pointer-events: none; // Prevent ghost play button
-        }
 
-        #hero-video::-webkit-media-controls {
-            display: none !important; // Hide iOS media controls
+            // Hide iOS play button
+            &::-webkit-media-controls-start-playback-button {
+                display: none !important;
+                -webkit-appearance: none;
+            }
         }
 
         picture {
