@@ -6,11 +6,11 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- This is where the CMS mounts -->
-    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+    <!-- Load Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms-app/dist/netlify-cms.js"></script>
     <script>
-      NetlifyCmsApp.init({
-        configPath: 'config.yml'  // <-- explicitly point to config
+      CMS.init({
+        configPath: '/admin/config.yml'  // use CMS, not NetlifyCmsApp
       });
     </script>
   </body>
