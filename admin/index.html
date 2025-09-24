@@ -8,6 +8,10 @@
   <body>
     <!-- This is where the CMS mounts -->
     <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      NetlifyCmsApp.init({
+        configPath: 'config.yml'  // <-- explicitly point to config
+      });
+    </script>
   </body>
 </html>
-
