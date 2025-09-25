@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title | default("Oceanside Web Design Blog") }}</title>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a> | <a href="/blog/">Blog</a>
+  </nav>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <p>© 2025 Oceanside Web Design</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "oswd",
+  "version": "1.0.0",
+  "description": "This is the latest version of my starter kit that I will be using from now on to build all my websites. It has a completely remade responsive navigation that is much simpler, and easier to edit and customize.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "eleventy",
+      "serve": "eleventy --serve",
+      "watch": "eleventy --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksom10/OceansideWebDesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksom10/OceansideWebDesign/issues"
+  },
+  "homepage": "https://github.com/ksom10/OceansideWebDesign#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
