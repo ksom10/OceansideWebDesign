@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("content/blog/*.md");
   });
 
-  // Date formatting filter
+  // Add readableDate filter
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("MMMM d, yyyy");
   });
@@ -19,3 +19,4 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+
