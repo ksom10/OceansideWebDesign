@@ -4,7 +4,14 @@
   <article>
     <h1>{{ title }}</h1>
     <p><small>Published {{ date | readableDate }}</small></p>
-    <div>
+
+    {% if image %}
+      <div class="featured-image">
+        <img src="{{ image }}" alt="{{ title }}">
+      </div>
+    {% endif %}
+
+    <div class="post-body">
       {{ content | safe }}
     </div>
   </article>
