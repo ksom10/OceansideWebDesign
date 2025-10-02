@@ -1,0 +1,270 @@
+@media only screen and (min-width: 0em) {
+  #form {
+    padding: 5em 1.25em;
+    margin-top: -10em;
+    z-index: 1;
+  }
+  #form .form-container {
+    max-width: 80em;
+    margin: auto;
+    padding: 1.25em;
+  }
+  #form .form-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 1.25em 3.75em rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  #form .form-left {
+    padding: 2.5em 1.875em;
+  }
+  #form .form-left .title {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--primaryDark);
+    margin-bottom: 1em;
+  }
+  #form .form-left p {
+    color: #333;
+    margin-bottom: 2em;
+    font-size: 1.125em;
+    line-height: 1.75em;
+  }
+  #form .form-left .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  #form .form-left .input-group label {
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 0.375em;
+    color: #0c2233;
+  }
+  #form .form-left .input-group input,
+  #form .form-left .input-group textarea {
+    font-size: 1em;
+    padding: 0.875em;
+    border: 0.0625em solid #cdd9e3;
+    border-radius: 0.5em;
+    background: #f8fbfd;
+    transition: border 0.3s;
+  }
+  #form .form-left .input-group input:focus,
+  #form .form-left .input-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
+  #form .form-left .input-group textarea {
+    min-height: 10em;
+  }
+  #form .form-left .form-submit {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #form .form-left .form-submit .button-solid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.875em 1.75em;
+    font-size: 1.125em;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.625em;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  #form .form-left .form-submit .button-solid:hover {
+    background-color: var(--primaryShade);
+    box-shadow: 0 0.75em 1.5em rgba(0, 0, 0, 0.12);
+  }
+  #form .form-left .form-submit .button-solid:active {
+    background-color: var(--primaryShade);
+    box-shadow: 0 0.375em 1em rgba(0, 0, 0, 0.08);
+  }
+  #form .form-left .form-submit .button-solid:focus-visible {
+    outline: 0.125em solid rgba(1, 87, 155, 0.35);
+    outline-offset: 0.125em;
+  }
+  #form .form-right {
+    background: var(--primary);
+    color: white;
+    padding: 2.5em 1.875em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #form .form-right .info-group {
+    margin-bottom: 3em;
+  }
+  #form .form-right .info-group .heading-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-bottom: 0.75em;
+  }
+  #form .form-right .info-group .heading-icon img {
+    width: 1.5em;
+    height: 1.5em;
+    filter: brightness(0) invert(1);
+  }
+  #form .form-right .info-group .heading-icon span {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1;
+  }
+  #form .form-right .info-group .info {
+    font-size: 1.125em;
+    opacity: 0.95;
+    display: block;
+    color: white !important;
+    text-decoration: none;
+  }
+  #form .form-right .info-group .info:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 48em) {
+  #form .form-card {
+    flex-direction: row;
+  }
+  #form .form-left,
+  #form .form-right {
+    width: 50%;
+  }
+  #form .form-right {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 64em) {
+  #form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6em;
+    padding: 9.375em 0;
+    margin-top: -6.25em;
+  }
+  #form .form-container {
+    max-width: 82.5em;
+  }
+  #form .form-left {
+    flex: 1;
+    padding-right: 3em;
+  }
+  #form .form-left .title {
+    font-size: 2em;
+  }
+  #form .form-left p {
+    font-size: 1.25em;
+    line-height: 1.875em;
+  }
+  #form .form-right {
+    flex: 1;
+    padding: 3em 2em;
+    gap: 3.5em;
+  }
+  #form .form-right .info-group {
+    margin-bottom: 3.5em;
+  }
+  #form .form-right .info-group .heading-icon img {
+    width: 1.75em;
+    height: 1.75em;
+  }
+  #form .form-right .info-group .heading-icon span {
+    font-size: 1.625em;
+  }
+  #form .form-right .info-group .info {
+    font-size: 1.25em;
+  }
+}
+/*-- -------------------------- -->
+<---   Contact Page Header     -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #int-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+    min-height: 55vh;
+    padding-top: 1.875em;
+    overflow: hidden;
+  }
+  #int-hero:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #int-hero picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #int-hero picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 45% 48%;
+  }
+  #int-hero h1 {
+    color: #fff;
+    font-size: 2.13333333em;
+    text-align: center;
+    width: 96%;
+    max-width: 7.8125em;
+    margin: -2em auto 0.46875em;
+    position: relative;
+  }
+  #int-hero p {
+    color: #fff;
+    text-align: center;
+    max-width: 22.22222222em;
+    margin: 0 auto 1.66666667em;
+    width: 96%;
+    position: relative;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #int-hero {
+    min-height: 65vh;
+    font-size: 16px;
+  }
+  #int-hero h1 {
+    font-size: 4em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 64em) {
+  #int-hero {
+    min-height: 60vh;
+    padding-top: 11.25em;
+    padding-block-end: 6.25em;
+    background-attachment: fixed;
+    font-size: inherit;
+  }
+  #int-hero h1 {
+    font-size: 4em;
+    margin: 0.375em auto 0.46875em;
+    max-width: 7.8125em;
+  }
+}

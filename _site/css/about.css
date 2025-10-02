@@ -1,0 +1,578 @@
+/*-- -------------------------- -->
+<---         About Us           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #about {
+    padding: 3.75em 1em;
+    margin-top: 2.5em;
+  }
+  #about .container {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 2em;
+  }
+  #about .top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2em;
+  }
+  #about .top-row .text-col {
+    max-width: 45em;
+  }
+  #about .top-row .text-col h2 {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.75em 0;
+    color: var(--primaryDark);
+  }
+  #about .top-row .text-col p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #0c2233;
+    margin: 0 0 1.25em 0;
+  }
+  #about .top-row .text-col .values-title {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: var(--primaryDark);
+    margin: 0.25em 0 0.75em 0;
+  }
+  #about .top-row .text-col .values {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75em;
+  }
+  #about .top-row .text-col .values li {
+    display: grid;
+    grid-template-columns: 1.75em auto;
+    align-items: center;
+    gap: 0.625em;
+  }
+  #about .top-row .text-col .values li .ico {
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    filter: none;
+  }
+  #about .top-row .text-col .values li span {
+    font-size: 1em;
+    font-weight: 700;
+    color: #0b2a3f;
+  }
+  #about .top-row .img-col {
+    width: 100%;
+    display: none;
+    justify-content: center;
+  }
+  #about .top-row .img-col img {
+    width: 100%;
+    max-width: 26.25em;
+    height: auto;
+    display: block;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #about .top-row .text-col h2 {
+    font-size: 3.25em;
+  }
+  #about .top-row .text-col p {
+    font-size: 1.1875em;
+    line-height: 1.875em;
+  }
+  #about .top-row .text-col .values {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #about .top-row .img-col img {
+    max-width: 35em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 64em) {
+  #about {
+    padding: 6.875em 0;
+  }
+  #about .container {
+    max-width: 82.5em;
+  }
+  #about .top-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+  }
+  #about .top-row .text-col {
+    flex: 1.1;
+    max-width: 45em;
+  }
+  #about .top-row .text-col h2 {
+    font-size: 4.5em;
+  }
+  #about .top-row .text-col p {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+  #about .top-row .text-col .values-title {
+    font-size: 1.75em;
+  }
+  #about .top-row .text-col .values {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.125em;
+  }
+  #about .top-row .text-col .values li span {
+    font-size: 1.25em;
+  }
+  #about .top-row .img-col {
+    flex: 0 1 32.5em;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #about .top-row .img-col img {
+    max-width: 32.5em;
+  }
+}
+/*-- -------------------------- */
+/*         Our Journey          */
+/*----------------------------- */
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #about-journey {
+    padding: 3.75em 1em;
+    background: #fff;
+    margin-top: -8.75em;
+  }
+  #about-journey .container {
+    width: 92%;
+    margin: 0 auto;
+  }
+  #about-journey .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+  }
+  #about-journey .img-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #about-journey .img-col img {
+    width: 100%;
+    max-width: 23.75em;
+    height: auto;
+    display: block;
+    border-radius: 0.875em;
+  }
+  #about-journey .text-col {
+    max-width: 45em;
+    text-align: left;
+    margin-top: -2em;
+  }
+  #about-journey .text-col h2 {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--primaryDark);
+    margin: 0 0 0.75em 0;
+  }
+  #about-journey .text-col p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #0c2233;
+    margin: 0 0 0.75em 0;
+  }
+  #about-journey .cta-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.375em 0 1.25em;
+  }
+  #about-journey .cta-center .button-solid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375em;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.625em;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    background-clip: padding-box;
+  }
+  #about-journey .cta-center .button-solid:hover {
+    background-color: var(--primaryShade);
+    box-shadow: 0 0.75em 1.5em rgba(0, 0, 0, 0.12);
+  }
+  #about-journey .cta-center .button-solid:active {
+    background-color: var(--primaryShade);
+    box-shadow: 0 0.375em 1em rgba(0, 0, 0, 0.08);
+  }
+  #about-journey .cta-center .button-solid:focus-visible {
+    outline: 0.125em solid rgba(1, 87, 155, 0.35);
+    outline-offset: 0.125em;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #about-journey .img-col img {
+    max-width: 32.5em;
+  }
+  #about-journey .text-col h2 {
+    font-size: 3.25em;
+  }
+  #about-journey .text-col p {
+    font-size: 1.1875em;
+    line-height: 1.875em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 64em) {
+  #about-journey {
+    padding: 6.875em 0;
+    margin-top: -15em;
+  }
+  #about-journey .container {
+    max-width: 82.5em;
+  }
+  #about-journey .row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+  }
+  #about-journey .img-col {
+    flex: 0 1 32.5em;
+    justify-content: flex-start;
+  }
+  #about-journey .img-col img {
+    max-width: 32.5em;
+  }
+  #about-journey .text-col {
+    flex: 1.1;
+  }
+  #about-journey .text-col h2 {
+    font-size: 4.25em;
+  }
+  #about-journey .text-col p {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+  #about-journey .cta-center {
+    padding: 0 0 2em;
+    margin-top: -6.25em;
+  }
+  #about-journey .cta-center .button-solid {
+    font-size: 1.25em;
+    padding: 1em 2em;
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 69.25em;
+    width: 125em;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
+/*Portfolio Section*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  .portfolio {
+    border-radius: 0.3125em;
+    margin: auto;
+    margin-top: 1.6875em;
+    position: relative;
+    z-index: 100;
+    background: white;
+    width: 90%;
+    max-width: 82.5em;
+    padding: 5.625em 1.25em;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3.125em;
+  }
+  .portfolio h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.875em;
+    padding-top: 1.875em;
+    color: var(--primary);
+  }
+  .portfolio .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Rest of your flex styling */
+  }
+  .portfolio .card {
+    display: block;
+    width: 100%;
+    max-width: 22.3125em;
+    margin: auto;
+    margin-bottom: 3.125em;
+    border: solid 1px #E5E5E5;
+    border-radius: 0.3125em;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    padding: 1.25em;
+  }
+  .portfolio .card:last-of-type {
+    margin-bottom: 0;
+  }
+  .portfolio .card .yed {
+    background: white;
+    max-width: 16.375em;
+    height: 16.5625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.4375em;
+  }
+  .portfolio .card .yed img {
+    width: 100%;
+    height: 70%;
+  }
+  .portfolio .card .mccracken {
+    background: white;
+    max-width: 18.875em;
+    height: 20.3125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.4375em;
+  }
+  .portfolio .card .mccracken img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio .card .lhi {
+    background: white;
+    max-width: 18.875em;
+    height: 7.8125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5em;
+    margin-top: 5.1875em;
+  }
+  .portfolio .card .lhi img {
+    width: 100%;
+    height: 80%;
+  }
+  .portfolio .card h2 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.35em;
+    font-weight: 900;
+    color: var(--primaryShade);
+    margin-bottom: 0.65em;
+  }
+  .portfolio .card .mccracken-heading {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.35em;
+    font-weight: 900;
+    color: var(--primaryShade);
+    margin-bottom: 0.75em;
+    margin-top: -2em;
+  }
+  .portfolio .card p {
+    text-align: left;
+    line-height: 1.33333333em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .portfolio .card a {
+    display: block;
+    margin-top: 3.21428571em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    font-size: min(1.8vw, 1em);
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* Rest of your flex styling */
+  }
+  .portfolio .card {
+    margin: 0;
+    margin-top: 1.5em;
+    max-width: 26.5625em;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  .portfolio {
+    padding: 3.125em 5em;
+    border-radius: 0.3125em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -4.1875em;
+    position: relative;
+    z-index: 100;
+    background: white;
+    width: 90%;
+    max-width: 82.5em;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3.125em;
+  }
+  .portfolio .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -4.1875em;
+    /* Rest of your flex styling */
+  }
+  .portfolio .card {
+    max-width: 22.3125em;
+  }
+}

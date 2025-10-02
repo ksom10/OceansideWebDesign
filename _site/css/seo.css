@@ -1,0 +1,345 @@
+/*-- -------------------------- */
+/*     SEO Services Section    */
+/* -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #seo-services {
+    padding: 5em 1.25em;
+    background: #fff;
+    margin-top: -6.25em;
+  }
+  #seo-services .container {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75em;
+  }
+  #seo-services .seo-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    text-align: left;
+    margin-top: -2.5em;
+    z-index: 1;
+  }
+  #seo-services .seo-features .seo-feature {
+    text-align: left;
+  }
+  #seo-services .seo-features .seo-feature img {
+    height: 7.5em;
+    width: auto;
+    margin: 0 auto 1em;
+    display: block;
+  }
+  #seo-services .seo-features .seo-feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: var(--primaryShade);
+  }
+  #seo-services .seo-features .seo-feature p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  #seo-services .seo-intro {
+    text-align: center;
+  }
+  #seo-services .seo-intro h2 {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--primaryShade);
+  }
+  #seo-services .seo-intro p {
+    font-size: 1em;
+    line-height: 1.625em;
+    color: #111;
+    text-align: center;
+  }
+  #seo-services .seo-process,
+  #seo-services .seo-final-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25em;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  #seo-services .seo-process .seo-step,
+  #seo-services .seo-final-row .seo-step,
+  #seo-services .seo-process .seo-end,
+  #seo-services .seo-final-row .seo-end {
+    flex: 1;
+    max-width: 6.25em;
+    text-align: left;
+  }
+  #seo-services .seo-process .seo-step img,
+  #seo-services .seo-final-row .seo-step img,
+  #seo-services .seo-process .seo-end img,
+  #seo-services .seo-final-row .seo-end img {
+    height: 4.5em;
+    width: auto;
+    margin: 0 auto 0.625em;
+    display: block;
+  }
+  #seo-services .seo-process .seo-step h4,
+  #seo-services .seo-final-row .seo-step h4,
+  #seo-services .seo-process .seo-end h4,
+  #seo-services .seo-final-row .seo-end h4 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0.375em;
+    min-height: 2.25em;
+    text-align: center;
+  }
+  #seo-services .seo-process .seo-step .arrow,
+  #seo-services .seo-final-row .seo-step .arrow,
+  #seo-services .seo-process .seo-end .arrow,
+  #seo-services .seo-final-row .seo-end .arrow {
+    height: 2em;
+    width: auto;
+    margin: 0.375em auto;
+    transform: rotate(180deg);
+  }
+  #seo-services .seo-process .seo-step p,
+  #seo-services .seo-final-row .seo-step p,
+  #seo-services .seo-process .seo-end p,
+  #seo-services .seo-final-row .seo-end p {
+    font-size: 1em;
+    line-height: 1.25em;
+    color: #333;
+    max-width: 18.75em;
+    margin: auto;
+    text-align: center;
+  }
+  #seo-services .seo-final-row {
+    margin-top: -3em;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #seo-services .seo-features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #seo-services .seo-features .seo-feature {
+    flex: 1;
+    padding: 0 0.625em;
+  }
+  #seo-services .seo-process {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #seo-services .seo-process .seo-step {
+    flex: 1;
+    padding: 0 0.625em;
+  }
+  #seo-services .seo-final-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #seo-services .seo-final-row .seo-end {
+    flex: 1;
+    padding: 0 0.625em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 64em) {
+  #seo-services {
+    padding: 6.25em 0;
+  }
+  #seo-services .container {
+    max-width: 82.5em;
+  }
+  #seo-services .seo-intro {
+    text-align: center;
+  }
+  #seo-services .seo-intro h2 {
+    font-size: 1.75em;
+  }
+  #seo-services .seo-intro p {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+  #seo-services .seo-features {
+    margin-top: 0;
+  }
+  #seo-services .seo-features .seo-feature {
+    text-align: center;
+  }
+  #seo-services .seo-features .seo-feature img {
+    height: 6em;
+    width: auto;
+    margin-bottom: 1em;
+  }
+  #seo-services .seo-features .seo-feature h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.625em;
+  }
+  #seo-services .seo-features .seo-feature p {
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 21.25em;
+    margin: auto;
+  }
+  #seo-services .seo-process,
+  #seo-services .seo-final-row {
+    gap: 2.5em;
+  }
+  #seo-services .seo-process .seo-step,
+  #seo-services .seo-final-row .seo-step,
+  #seo-services .seo-process .seo-end,
+  #seo-services .seo-final-row .seo-end {
+    text-align: center;
+  }
+  #seo-services .seo-process .seo-step img,
+  #seo-services .seo-final-row .seo-step img,
+  #seo-services .seo-process .seo-end img,
+  #seo-services .seo-final-row .seo-end img {
+    height: 6em;
+    width: auto;
+    margin-bottom: 1em;
+  }
+  #seo-services .seo-process .seo-step h4,
+  #seo-services .seo-final-row .seo-step h4,
+  #seo-services .seo-process .seo-end h4,
+  #seo-services .seo-final-row .seo-end h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.625em;
+    white-space: nowrap;
+    min-width: 7.5em;
+    margin-left: -1.5em;
+  }
+  #seo-services .seo-process .seo-step .arrow,
+  #seo-services .seo-final-row .seo-step .arrow,
+  #seo-services .seo-process .seo-end .arrow,
+  #seo-services .seo-final-row .seo-end .arrow {
+    height: 2.5em;
+    margin: 0.5em auto;
+    margin-left: 1.75em;
+    transform: rotate(0deg) !important;
+    display: block;
+  }
+  #seo-services .seo-process .seo-step p,
+  #seo-services .seo-final-row .seo-step p,
+  #seo-services .seo-process .seo-end p,
+  #seo-services .seo-final-row .seo-end p {
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 26.25em;
+    margin: auto;
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 69.25em;
+    width: 125em;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
